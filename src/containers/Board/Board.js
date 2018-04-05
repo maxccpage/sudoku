@@ -37,7 +37,8 @@ export default class Board extends Component {
     return (
       <div className="Board-Container">
         <div className="Game-Board">
-          {this.state.on
+          {//Here I am mapping through the puzzleArr created in in the componentDidMount and returning each Cell
+          this.state.on
             ? puzzleArr.map(cell => {
                 return <Cell key={cell.id} cell={cell} />;
               })
